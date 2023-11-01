@@ -119,7 +119,7 @@ def download_materials(save_path, course_name,drive_service, classroom_service, 
 
     if course_work_materials.get('courseWorkMaterial'):
         for material in course_work_materials['courseWorkMaterial']:
-            if 'materials' in material.keys() and 'title' in material.keys() and i < 4:
+            if 'materials' in material.keys() and 'title' in material.keys():
                 aula_name = material["title"].replace(" ", "_")
                 for material_assets in material["materials"]:
                     if material.get("topicId"):
